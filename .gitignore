@@ -18,3 +18,4 @@ tests/cache/*
 tests/error.log
 
 tests/acceptance.suite.yml
+/vendor/
