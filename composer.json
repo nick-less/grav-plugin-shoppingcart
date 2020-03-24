@@ -1,5 +1,6 @@
 {
-    "name": "flaviocopes/grav-plugin-shoppingcart",
+    "name": "nick-less/grav-plugin-shoppingcart",
+    "type": "grav-plugin",
     "description": "Shopping Cart Plugin for the Grav CMS",
     "license": "MIT",
     "authors": [
@@ -17,6 +18,7 @@
         "fzaninotto/faker": "^1.5"
     },
     "scripts": {
+        "package": "@composer archive --format=zip --file grav-plugin-shoppingcart",
         "test": "vendor/bin/codecept run unit",
         "test-windows": "vendor\\bin\\codecept run unit"
     }
