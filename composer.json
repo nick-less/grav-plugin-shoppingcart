@@ -1,25 +1,31 @@
 {
-    "name": "nick-less/grav-plugin-shoppingcart",
-    "type": "grav-plugin",
-    "description": "Shopping Cart Plugin for the Grav CMS",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Flavio Copes",
-            "email": "copesc@gmail.com"
-        }
-    ],
-    "require": {
-        "omnipay/common": "~2.0",
-        "symfony/http-foundation": "3.4.35"
-    },
-    "require-dev": {
-        "codeception/codeception": "^2.1",
-        "fzaninotto/faker": "^1.5"
-    },
-    "scripts": {
-        "package": "@composer archive --format=zip --file grav-plugin-shoppingcart",
-        "test": "vendor/bin/codecept run unit",
-        "test-windows": "vendor\\bin\\codecept run unit"
-    }
+	"name": "nick-less/grav-plugin-shoppingcart",
+	"type": "grav-plugin",
+	"description": "Shopping Cart Plugin for the Grav CMS",
+	"license": "MIT",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/nick-less/grav-plugin-shoppingcart.git"
+		}
+	],
+	"authors": [
+		{
+			"name": "Flavio Copes",
+			"email": "copesc@gmail.com"
+		}
+	],
+	"require": {
+		"omnipay/common": "~2.0",
+		"symfony/http-foundation": "3.4.35"
+	},
+	"require-dev": {
+		"codeception/codeception": "^2.1",
+		"fzaninotto/faker": "^1.5"
+	},
+	"scripts": {
+		"package": "@composer archive --format=zip --file grav-plugin-shoppingcart",
+		"test": "vendor/bin/codecept run unit",
+		"test-windows": "vendor\\bin\\codecept run unit"
+	}
 }

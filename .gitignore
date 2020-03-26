@@ -20,3 +20,5 @@ tests/error.log
 tests/acceptance.suite.yml
 vendor
 /grav-plugin-shoppingcart.zip
+/node_modules/
+/dist/
