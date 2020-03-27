@@ -1,5 +1,5 @@
 var assert = require('assert');
-var ShoppingCart = require('../../../js/shoppingcart_lib.js');
+var ShoppingCart = require('../../../src/js/shoppingcart_lib.js');
 
 describe('ShoppingCart Lib', function() {
     describe('ShoppingCart.getCodeOfCountry()', function () {
