@@ -78,6 +78,86 @@ en:
     THANKS_FOR_YOUR_ORDER: Thanks for your order
     PLEASE_FILL_ALL_THE_REQUIRED_FIELDS: Please fill all the required fields
 
+de:
+  PLUGIN_SHOPPINGCART:
+    DETAILS: Details
+    PRICE: Preis
+    INCLUDING_TAXES: mit Steuern
+    EXCLUDING_TAXES: ohne Steuern
+    ADD_TO_CART: in den Warenkorb
+    DESCRIPTION: Beschreibung
+    NO_PRODUCTS_FOUND: keine Produkte gefunden
+    CHECKOUT_PAGE_TITLE: Checkout
+    CHECKOUT_HEADLINE_YOUR_PERSONAL_DETAILS: "## Persönliche Daten"
+    CHECKOUT_FIRST_NAME: Vorname
+    CHECKOUT_LAST_NAME: Nachname
+    CHECKOUT_EMAIL: E-Mail
+    CHECKOUT_PHONE: Telefon
+    CHECKOUT_HEADLINE_YOUR_ADDRESS: "## Addresse"
+    CHECKOUT_ADDRESS: Addresse
+    CHECKOUT_CITY: Stadt
+    CHECKOUT_ZIP: PLZ
+    CHECKOUT_COUNTRY: Staat
+    CHECKOUT_STATE: Land
+    CHECKOUT_PROVINCE: Provinz
+    CHECKOUT_CHOOSE_SHIPPING_METHOD: Liefermethode auswählen
+    CHECKOUT_CHOOSE_SHIPPING_METHOD_DESC: Bitte wählen Sie wie die Waren geliefert werden sollen.
+    CHECKOUT_CHOOSE_PAYMENT_METHOD: Zahlungsmethode auswählen
+    CHECKOUT_CHOOSE_PAYMENT_METHOD_DESC: Bitte wählen Sie die Zahlungsmethode
+    CHECKOUT_PAYMENT_SECURE_NOTE: Alle Transaktionen sind verschlüsselt, Kreditkarteninformation werden nicht gespeichert. Mehr erfahren Sie in unseren Privatsphäreeinstellungen.
+    CHECKOUT_BUTTON_BACK: Zurück
+    CHECKOUT_BUTTON_PAY: Weiter zum Bezahlen
+    PRICE_DO_NOT_INCLUDE_TAXES: Preise ohne Mehrwertsteuer, die Mehrwertsteuer wird beim Bezahlen berechnet sobald Sie das Lieferland ausgewählt haben.
+    ORDER_SUCCESSFUL_PAGE_TITLE: Bestellung erfolgreich
+    ITEMS_PURCHASED: Artikel gekauft:
+    ORDER_SUCCESSFUL_CONFIRMATION_TEXT: Danke für Ihre Bestellung, Sie werden benachrichtigt sobald die Bestellung versandt wurde.
+    ORDER_PAGE_WRONG_TOKEN_MESSAGE: Ungültige Seite
+    LOADING_WORD_BEFORE_ORDER_CONFIRMATION_PAGE: Laden..
+    DOWNLOAD: Herunterladen
+    SHOPPING_CART: Warenkorb
+    YOU_ARE_PURCHASING_THESE_ITEMS: Sie kaufen folgende Artikel:
+    ITEM: Artikel
+    QUANTITY: Anzahl
+    TOTAL: Gesamt
+    REMOVE: Entfernen
+    UPDATE_QUANTITIES: Menge anpassen
+    CHECKOUT: Bezahlen
+    INCLUDING_SHIPPING: Inklusive Versand
+    ORDER_CANCELLED: Bestellung abgebrochen
+    YOU_CANCELLED_THE_ORDER: Sie haben die Bestellung abgebrochen
+    VALUE_NOT_ACCEPTABLE: ungültige Bestellmenge
+    QUANTITY_EXCEEDS_MAX_ALLOWED_VALUE: Die Bestellmenge überschreitet die maximale Bestellmenge
+    CHECKOUT_PAYMENT_METHOD: "## Zahlungsmethode"
+    CHECKOUT_SHIPPING_METHOD: "## Versandart"
+    THANK_YOU: Danke für Ihre Bestellung.
+    CHOOSE_AN_OPTION: Treffen Sie eine Auswahl
+    EDIT_CART: Warenkorb bearbeiten
+    QUANTITY_SHORT: Menge
+    NO_ITEMS_IN_CART: Keine Artikel hinzugefügt
+    PRODUCT_ADDED_TO_CART: Artikel zum Warenkorb unzugefügt
+    PRODUCTS_BOUGHT: Artikel gekauft
+    SEE_THE_ORDER_DETAILS: Bestelldetails ansehen
+    TERMS_AND_CONDITIONS: "Allgemeinen Geschäftsbedingungen zustimmen"
+    SORRY_CANNOT_SHIP_TO_YOUR_COUNTRY: Wir können Ihr Land leider nicht beliefern.
+    READ_MORE: Mehr lesen
+    MINIMUM_TO_PLACE_AN_ORDER: Mindestbestellmenge:
+    PAYPAL: PayPal
+    CREDITCARD: Kreditkarte
+    SHIPPING: Versand
+    TAXES: Mehrwertsteuer
+    SUBTOTAL: Zwischensumme
+    CONTINUE_SHOPPING: weiter Einkaufen
+    DOWNLOAD_EXPIRED: Download abgelaufen
+    TOTAL_PAID: Gesamtsumme
+    ORDER_ID: Bestellnummer
+    ORDER_DATE: Bestelldatum
+    NO_ORDERS_FOUND: Keine Bestellungen gefunden
+    MANAGE_ORDERS: Bestellungen bearbeiten
+    ORDERS: Bestellungen
+    ORDER_DETAILS: Bestelldetails
+    THANKS_FOR_YOUR_ORDER: Danke für Ihre Bestellung
+    PLEASE_FILL_ALL_THE_REQUIRED_FIELDS: Bitte füllen Sie alle notwendigen Felder aus
+
 fr:
   PLUGIN_SHOPPINGCART:
     DETAILS: Détails
