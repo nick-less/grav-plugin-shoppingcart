@@ -1,6 +1,19 @@
-@import "configuration/nucleus/base";
-@import "nucleus/mixins/base";
-@import "vendor/bourbon/bourbon";
+//@import "configuration/nucleus/base";
+//@import "nucleus/mixins/base";
+//@import "vendor/bourbon/bourbon";
+
+
+@mixin clearfix {
+}
+
+@mixin breakpoint($breakpoints, $media: all) {
+    @each $breakpoint in $breakpoints {
+       
+    }
+
+}
+$core-font-size : 10rem;
+
 
 // mini grid system - http://arnaudleray.github.io/pocketgrid
 .block-group,.block,.block-group:after,.block:after,.block-group:before,.block:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -14,7 +27,7 @@
  $cart-accent: #e74c3c;
 
  .shoppingcart-summary {
-     @extend %vertical-align;
+//     @extend %vertical-align;
      display: inline-block;
      float: right;
      font-weight: bold;
@@ -62,9 +75,11 @@
 
          &.block {
              width: 50%;
+             /*
              @include breakpoint((mobile-only, small-mobile-range)) {
                  width: 100%;
              }
+             */
          }
      }
  }
@@ -80,8 +95,9 @@
          h3 {
              font-size: 16px;
          }
-
+/*
          &.block {
+             
              width: 25%;
              @include breakpoint((desktop-range,tablet-range)) {
                  width: 33%;
@@ -92,7 +108,8 @@
              @include breakpoint(small-mobile-range) {
                  width: 100%;
              }
-         }
+             
+         }*/
      }
  }
 
@@ -123,9 +140,11 @@
 
      .shoppingcart-info, .shoppingcart-details {
          width: 50%;
+         /*
          @include breakpoint(mobile-only) {
              width: 100%;
          }
+         */
      }
      .shoppingcart-info {
          text-align: center;

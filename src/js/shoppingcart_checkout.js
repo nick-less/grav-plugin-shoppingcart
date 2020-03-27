@@ -1,3 +1,6 @@
+import storejs from 'store/dist/store.everything.js';
+
+
 (function(ShoppingCart) {
 
     ShoppingCart.processCheckoutFormSubmission = function processCheckoutFormSubmission() {
@@ -161,12 +164,12 @@
         var shippingMethods = [];
         var currency_symbol = ShoppingCart.currentCurrencySymbol();
 
-        for (index in ShoppingCart.settings.shipping.methods) {
+        for (var index in ShoppingCart.settings.shipping.methods) {
             shippingMethods[index] = ShoppingCart.settings.shipping.methods[index];
         }
 
         var methodIsAllowedInCountry = function methodIsAllowedInCountry(method, country) {
-            for (index in method.allowed_countries) {
+            for (var index in method.allowed_countries) {
                 if (method.allowed_countries[index] == country) return true;
                 if (method.allowed_countries[index] == '*') return true;
             }
@@ -197,17 +200,20 @@
 
         if (shippingMethods.length === 0) {
             var select = document.getElementById('js__shipping__method');
-            (select.options[0] = new Option('-', '-')).setAttribute('selected', 'selected');
-            jQuery('.js__checkout-choose-shipping-block').hide();
-            jQuery('.js__checkout-choose-shipping-block-title').hide();
+            if (select) {
+                (select.options[0] = new Option('-', '-')).setAttribute('selected', 'selected');
+                jQuery('.js__checkout-choose-shipping-block').hide();
+                jQuery('.js__checkout-choose-shipping-block-title').hide();
+            }
         } else if (shippingMethods.length === 1) {
             var shipping_method_name = shippingMethods[0].name;
 
             var select = document.getElementById('js__shipping__method');
-            (select.options[0] = new Option(shipping_method_name, shipping_method_name)).setAttribute('selected', 'selected');
-            jQuery('.js__checkout-choose-shipping-block select').hide();
-            jQuery('.js__checkout-choose-shipping-block .form-label').hide();
-
+            if (select) {
+	            (select.options[0] = new Option(shipping_method_name, shipping_method_name)).setAttribute('selected', 'selected');
+	            jQuery('.js__checkout-choose-shipping-block select').hide();
+	            jQuery('.js__checkout-choose-shipping-block .form-label').hide();
+            }
             var priceBlock = shippingMethods[0].price + ' ' + currency_symbol;
             if (ShoppingCart.settings.ui.currency_symbol_position === 'before') {
                 priceBlock = currency_symbol + ' ' + shippingMethods[0].price;

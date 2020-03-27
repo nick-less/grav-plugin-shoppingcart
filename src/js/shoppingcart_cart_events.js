@@ -1,3 +1,6 @@
+import storejs from 'store/dist/store.everything.js';
+
+
 (function(ShoppingCart) {
 
     /***********************************************************/

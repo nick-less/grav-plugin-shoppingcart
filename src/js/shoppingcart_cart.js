@@ -1,3 +1,7 @@
+import storejs from 'store/dist/store.everything.js';
+
+
+
 (function(ShoppingCart) {
     ShoppingCart.items = [];
     ShoppingCart.checkout_form_data = {};
@@ -29,16 +33,16 @@
             ShoppingCart.settings.payment.methods = [];
         }
 
-        for (index in ShoppingCart.settings.shipping.methods) {
-            item = ShoppingCart.settings.shipping.methods[index];
+        for (var index in ShoppingCart.settings.shipping.methods) {
+            var item = ShoppingCart.settings.shipping.methods[index];
             if (typeof item !== 'undefined') {
                 if (!item.allowed_countries) item.allowed_countries = [];
                 ShoppingCart.settings.shipping.methods[index] = item;
             }
         }
 
-        for (index in ShoppingCart.settings.countries) {
-            item = ShoppingCart.settings.countries[index];
+        for (var index in ShoppingCart.settings.countries) {
+            var item = ShoppingCart.settings.countries[index];
             if (typeof item !== 'undefined') {
                 if (item.allow === 'false' || item.allow === false) {
                     item.isAllowed = false;
@@ -50,8 +54,8 @@
 
         }
 
-        for (index in ShoppingCart.settings.payment.methods) {
-            item = ShoppingCart.settings.payment.methods[index];
+        for (var index in ShoppingCart.settings.payment.methods) {
+            var item = ShoppingCart.settings.payment.methods[index];
             if (typeof item !== 'undefined') {
                 ShoppingCart.settings.payment.methods[index] = item;
             }

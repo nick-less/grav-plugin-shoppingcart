@@ -2,12 +2,15 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
+var dist_path = path.resolve(__dirname, 'dist/grav-plugin-shoppingcart');
+
+	
+module.exports = env => ({
 	mode : "development",
 	entry : './src/js/shoppingcart.js',
 	output : {
 		filename : 'js/shoppingcart.js',
-		path : path.resolve(__dirname, 'dist/grav-plugin-shoppingcart'),
+		path : (env && env.dist_path? env.dist_path : dist_path),
 	},
 	module : {
 		rules : [ {
@@ -32,7 +35,7 @@ module.exports = {
 
 	},
 	plugins : [ new MiniCssExtractPlugin({
-		filename : '[name].css'
+		filename : 'css/[name].css'
 	}), new CopyPlugin([ {
 		from : "*.yaml"
 	}, {
@@ -59,4 +62,4 @@ module.exports = {
 		from : 'classes',
 		to : 'classes'
 	}, ]), ],
-};
+});
