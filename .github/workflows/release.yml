@@ -14,9 +14,7 @@ jobs:
     steps:
       
       - name: "Build & test"
-        run: |
-          npm run build-package
-          echo "done!"
+        run: "npm run build-package"
 
       - uses: "./dist/"
         with:
