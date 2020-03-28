@@ -18,10 +18,11 @@ jobs:
           npm run build-package
           echo "done!"
 
-        with:
+      - uses: "./dist/"
+      with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: true
           title: "Development Build"
           files: |
-            dist/*.zip
+            *.zip
