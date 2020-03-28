@@ -87,7 +87,7 @@ de:
     ADD_TO_CART: in den Warenkorb
     DESCRIPTION: Beschreibung
     NO_PRODUCTS_FOUND: keine Produkte gefunden
-    CHECKOUT_PAGE_TITLE: Checkout
+    CHECKOUT_PAGE_TITLE: Bestellung abschliessen
     CHECKOUT_HEADLINE_YOUR_PERSONAL_DETAILS: "## Persönliche Daten"
     CHECKOUT_FIRST_NAME: Vorname
     CHECKOUT_LAST_NAME: Nachname
@@ -107,7 +107,7 @@ de:
     CHECKOUT_PAYMENT_SECURE_NOTE: Alle Transaktionen sind verschlüsselt, Kreditkarteninformation werden nicht gespeichert. Mehr erfahren Sie in unseren Privatsphäreeinstellungen.
     CHECKOUT_BUTTON_BACK: Zurück
     CHECKOUT_BUTTON_PAY: Weiter zum Bezahlen
-    PRICE_DO_NOT_INCLUDE_TAXES: Preise ohne Mehrwertsteuer, die Mehrwertsteuer wird beim Bezahlen berechnet sobald Sie das Lieferland ausgewählt haben.
+    PRICE_DO_NOT_INCLUDE_TAXES: Preise ohne Mehrwertsteuer, die Mehrwertsteuer wird beim Bezahlen berechnet, sobald Sie das Lieferland ausgewählt haben.
     ORDER_SUCCESSFUL_PAGE_TITLE: Bestellung erfolgreich
     ITEMS_PURCHASED: Artikel gekauft:
     ORDER_SUCCESSFUL_CONFIRMATION_TEXT: Danke für Ihre Bestellung, Sie werden benachrichtigt sobald die Bestellung versandt wurde.
@@ -134,7 +134,7 @@ de:
     EDIT_CART: Warenkorb bearbeiten
     QUANTITY_SHORT: Menge
     NO_ITEMS_IN_CART: Keine Artikel hinzugefügt
-    PRODUCT_ADDED_TO_CART: Artikel zum Warenkorb unzugefügt
+    PRODUCT_ADDED_TO_CART: Artikel zum Warenkorb hinzugefügt
     PRODUCTS_BOUGHT: Artikel gekauft
     SEE_THE_ORDER_DETAILS: Bestelldetails ansehen
     TERMS_AND_CONDITIONS: "Allgemeinen Geschäftsbedingungen zustimmen"
