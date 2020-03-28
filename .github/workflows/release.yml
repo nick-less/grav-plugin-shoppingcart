@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "done!"
 
-      - uses: " nick-less/grav-plugin-shoppingcart@latest"
+      - uses: "nick-less/grav-plugin-shoppingcart@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
