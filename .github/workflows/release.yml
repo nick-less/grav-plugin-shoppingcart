@@ -19,11 +19,11 @@ jobs:
         node-version: 12.x    
     - run: npm ci
     - run: "npm run build-package"
-    - uses: "./dist/"
+    - uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
         prerelease: true
         title: "Development Build"
         files: |
-          *.zip
+          dist/*.zip
