@@ -5,7 +5,7 @@
 	"private": true,
 	"scripts": {
 		"build": "webpack",
-		"package": "cd dist; zip -r grav-plugin-shoppingcart.zip grav-plugin-shoppingcart/;cd ..",
+		"package": "cd dist; zip -r grav-plugin-shoppingcart.zip grav-plugin-shoppingcart/ -x '*.git*';cd ..",
 		"build-package": "composer update --no-dev;npm run build;npm run package",
 		"clean": " rm -rf vendor; rm -rf node_modules",
 		"test": "mocha --reporter list --recursive './tests/js/test/*.js'"
