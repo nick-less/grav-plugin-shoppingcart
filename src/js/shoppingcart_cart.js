@@ -197,14 +197,14 @@ import storejs from 'store/dist/store.everything.js';
 
         //calculate country taxes
         var country;
-        for (index in ShoppingCart.settings.countries) {
+        for (var index in ShoppingCart.settings.countries) {
             if (ShoppingCart.checkout_form_data.country == ShoppingCart.settings.countries[index].name) {
                 country = ShoppingCart.settings.countries[index];
             }
         }
 
         if (!country) {
-            for (index in ShoppingCart.settings.countries) {
+            for (var index in ShoppingCart.settings.countries) {
                 if ('*' == ShoppingCart.settings.countries[index].name) {
                     country = ShoppingCart.settings.countries[index];
                 }
@@ -306,7 +306,7 @@ import storejs from 'store/dist/store.everything.js';
     /***********************************************************/
     ShoppingCart.generateShippingPrice = function generateShippingPrice() {
         var countMethods = 0;
-        for (index in ShoppingCart.settings.shipping.methods) {
+        for (var index in ShoppingCart.settings.shipping.methods) {
             countMethods++;
         }
 
@@ -318,7 +318,7 @@ import storejs from 'store/dist/store.everything.js';
             ShoppingCart.renderCart();
         } else if (countMethods === 1) {
             var method;
-            for (index in ShoppingCart.settings.shipping.methods) {
+            for (var index in ShoppingCart.settings.shipping.methods) {
                 method = ShoppingCart.settings.shipping.methods[index];
             }
 
@@ -331,7 +331,7 @@ import storejs from 'store/dist/store.everything.js';
                     clearInterval(interval);
 
                     var method;
-                    for (index in ShoppingCart.settings.shipping.methods) {
+                    for (var index in ShoppingCart.settings.shipping.methods) {
                         if (shippingMethodName == ShoppingCart.settings.shipping.methods[index].name) {
                             method = ShoppingCart.settings.shipping.methods[index];
                         }
