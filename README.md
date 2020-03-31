@@ -1,5 +1,7 @@
 # Grav Shopping Cart Plugin
 
+![](https://github.com/nick-less/grav-plugin-shoppingcart/workflows/pre-release/badge.svg)
+
 [Download](https://github.com/nick-less/grav-plugin-shoppingcart/releases/download/latest/grav-plugin-shoppingcart.zip) development version.
 
 
