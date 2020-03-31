@@ -9,9 +9,9 @@
         {% include 'partials/shoppingcart_core_cart.html.twig' %}
 
         <script>
-            (function() {
+            (function(ShoppingCart) {
                 ShoppingCart.currentPageIsProducts = true;
-            }());
+            }(window.ShoppingCart));
         </script>
 
         {{ page.content|raw }}

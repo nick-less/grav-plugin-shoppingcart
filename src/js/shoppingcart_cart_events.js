@@ -1,7 +1,7 @@
 import storejs from 'store/dist/store.everything.js';
 
+import ShoppingCart from './lib/shoppingcart.js';
 
-(function(ShoppingCart) {
 
     /***********************************************************/
     /* Handle removing a product from the cart
@@ -83,6 +83,9 @@ import storejs from 'store/dist/store.everything.js';
 
         button.attr('disabled', 'disabled');
 
+        console.log(ShoppingCart);
+        console.log(window.ShoppingCart)
+        
         if (ShoppingCart.currentPageIsProducts) {
             currentProduct = ShoppingCart.currentProducts.filter(function(item) {
                 return item.id == clickedId;
@@ -196,4 +199,3 @@ import storejs from 'store/dist/store.everything.js';
     });
 
 
-})(window.ShoppingCart);

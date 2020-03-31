@@ -7,7 +7,7 @@ var dist_path = path.resolve(__dirname, 'dist/grav-plugin-shoppingcart');
 	
 module.exports = env => ({
 	mode : "development",
-	entry : './src/js/shoppingcart.js',
+	entry : './src/js/index.js',
 	output : {
 		filename : 'js/shoppingcart.js',
 		path : (env && env.dist_path? env.dist_path : dist_path),

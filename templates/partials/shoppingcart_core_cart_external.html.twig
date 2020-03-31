@@ -4,9 +4,9 @@
     Turn on the "Load Cart JavaScript globally" option to show the cart on this page
 {% else %}
     <script>
-    (function() {
+    (function(ShoppingCart) {
         ShoppingCart.currentPageIsExternal = true;
-    }());
+    }(window.ShoppingCart));
     </script>
 
     {% if page.template not in shoppingcart.getOwnPageTypes %}

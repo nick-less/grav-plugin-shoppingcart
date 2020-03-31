@@ -8,7 +8,7 @@
 </button>
 
 <script>
-    (function() {
+    (function(ShoppingCart) {
         var currentProduct = {
             title: "{{ product.title|e }}",
             id: "{{ product.id|e }}",
@@ -25,5 +25,5 @@
             ShoppingCart.currentProduct = currentProduct;
             ShoppingCart.currentPageIsProduct = true;
         }
-    }());
+    }(window.ShoppingCart));
 </script>

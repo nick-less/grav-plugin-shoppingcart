@@ -1,4 +1,6 @@
-(function(ShoppingCart) {
+import ShoppingCart from './lib/shoppingcart.js';
+
+
 
     /***********************************************************/
     /* Generate the selected shipping price
@@ -43,4 +45,3 @@
         ShoppingCart.populateShippingOptions();
     });
 
-})(window.ShoppingCart);

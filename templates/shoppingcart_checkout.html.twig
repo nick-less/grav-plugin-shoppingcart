@@ -11,9 +11,9 @@
     </div>
 
     <script>
-        (function() {
+        (function(ShoppingCart) {
             ShoppingCart.checkout_form_fields = {{ json_encode(config.plugins.shoppingcart.checkout_form.fields)|raw }};
-        }());
+        }(window.ShoppingCart));
     </script>
 
 {% endblock %}

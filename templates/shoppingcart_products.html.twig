@@ -7,10 +7,10 @@
     {% include 'partials/shoppingcart_core_cart.html.twig' %}
 
     <script>
-    (function() {
+    (function(ShoppingCart) {
         ShoppingCart.currentPageIsProducts = true;
         ShoppingCart.currentProducts = [];
-    }());
+    }(window.ShoppingCart));
     </script>
 
     <div class="content-wrapper">
