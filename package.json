@@ -8,7 +8,7 @@
 		"package": "cd dist; zip -r grav-plugin-shoppingcart.zip grav-plugin-shoppingcart/ -x '*.git*';cd ..",
 		"build-package": "composer update --no-dev;npm run build;npm run package",
 		"clean": " rm -rf vendor; rm -rf node_modules",
-		"test": "mocha --reporter list --recursive './tests/js/test/*.js'"
+		"test": "mochapack --reporter list --recursive './tests/js/test/*.js'"
 	},
 	"dependencies": {
 		"store": "2.0.12"
@@ -22,6 +22,7 @@
 		"css-loader": "3.4.2",
 		"mini-css-extract-plugin": "0.9.0",
 		"copy-webpack-plugin": "5.1.1",
-		"mocha": "7.1.1"
+		"mocha": "7.1.1",
+		"mochapack": "1.1.13"
 	}
 }
