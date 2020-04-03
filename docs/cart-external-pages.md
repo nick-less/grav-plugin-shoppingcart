@@ -1,9 +1,13 @@
- Adding the cart to external pages (not managed by the shopping cart)
+# Installation
 
-Simply include the partials/shoppingcart_core_cart_external.html.twig Twig in page twigs you want.
+To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `shoppingcart`.
 
-{% include 'partials/shoppingcart_core_cart_external.html.twig' %}
+You should now have all the plugin files under 
 
-and then enable the "Load Cart JavaScript globally" option in Admin (if you prefer, general.load_js_globally in shoppingcart.yaml.
+<pre>`/your/site/grav/user/plugins/shoppingcart`</pre>.
 
-You can add the above Twig snippet even in base.html.twig, the plugin will make sure the cart is not inserted 2 times in pages that already include it.
+This tutorial will guide you until you'll get a nice shop like this:
+
+<img alt="Screenshot" src="/img/screenshot1.jpg">
+
+<img alt="Screenshot" src="/img/screenshot2.jpg">

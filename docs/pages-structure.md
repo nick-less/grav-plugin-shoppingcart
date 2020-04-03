@@ -1,83 +1,43 @@
-# Pages structure
+# Events you can use in addons
 
-Create a page of type shoppingcart_categories.md. This page will contain a list of categories, provided by its subpages. The categories are pages of type shoppingcart_products.md.
+#### onShoppingCartPreparePayment
 
-In turn, those pages have subpages of type shoppingcart_product.md, which are the product pages.
+<pre><code>Triggered by Core.
+Used by Gateway Addons.
+Prepare a payment for an order</code></pre>
 
-Here's an example of a possible page structure:
+#### onShoppingCartPay
 
-```
-01.shop
-    shoppingcart_categories.md
-    01.t-shirts
-        shoppingcart_products.md
-        01.first-t-shirt
-            product_image.jpg
-            shoppingcart_product.md
-        02.second-t-shirt
-            product_image.jpg
-            shoppingcart_product.md
-    02.mugs
-        shoppingcart_products.md
-        01.first-mug
-            product_image.jpg
-            shoppingcart_product.md
-        02.second-mug
-            product_image.jpg
-            shoppingcart_product.md
-```
-Categories List Page
+<pre><code>Triggered by Gateway Addons.
+Used by Core.
+Actually pay an payment for an order</code></pre>
 
-The main "Shop" page, with the list of the available categories, will use this structure:
+#### onShoppingCartSaveOrder
 
-shoppingcart_categories.md
+<pre><code>Triggered by Gateway Addons.
+Used by Core.
+Saves the order, once made sure it's paid</code></pre>
 
-```
----
-title: Shop
-body_classes: fullwidth
-content:
-    items: @self.children
-    order:
-        by: title
-        dir: asc
----
+#### onShoppingCartRedirectToOrderPageUrl
 
-# Shop
+<pre><code>Triggered by Gateway Addons.
+Used by Core
+Redirect to the order successful page</code></pre>
 
-Products list Page
+#### onShoppingCartGotBackFromGateway
 
-The products listing page (or, single category view page) will follow this structure:
-```
-shoppingcart_products.md
+<pre><code>Triggered by Gateway Addons.
+Used by Gateway Addons.
+Internal event to process something when I got back from the Gateway. Find example usage in the PayPal addon</code></pre>
 
-```
----
-title: Geek Toys
-category: Geek Toys
-content:
-    items: @self.children
-    order:
-        by: title
-        dir: asc
----
+#### onShoppingCartReturnOrderPageUrlForAjax
 
-# Geek Toys
-## Anime, Gaming, Movies, Comics, we have **all your toys**
+<pre><code>Triggered by Gateway Addons
+Used by Core
+Allows the Gateway addon to get the order page via Ajax</code></pre>
 
-Single Product Page
+#### onShoppingCartAfterSaveOrder:
 
-Product Pages using shoppingcart_product.md will follow this structure:
-```
-shoppingcart_product.md
-
-```
----
-title: Product title
-price: 19.99
----
-
-#### Product title to be shown in the page
-
-Product description
-```
+<pre><code>Triggerred by Core
+Used by Addons.
+Called after an order is saved. Used by the Email addon for example, to send the email confirmation</code></pre>
