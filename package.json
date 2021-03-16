@@ -14,7 +14,7 @@
 		"store": "2.0.12"
 	},
 	"devDependencies": {
-		"webpack": "^4.42.1",
+		"webpack": "4.44.1",
 		"webpack-cli": "^3.3.11",
 		"sass-loader": "8.0.2",
 		"node-sass": "4.13.1",
